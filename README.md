@@ -57,7 +57,7 @@ OpenLane integrated several key open source tools over the execution stages:
 ![flow_v1](https://github.com/KanishR1/vsd_openlane_workshop/assets/88330171/87ecc681-ab20-4c14-adae-a72c5cacfc70)
 
 ### OpenLANE Direcctory Structure
-'''
+```
 .
 |-- AUTHORS.md
 |-- CONTRIBUTING.md
@@ -1420,4 +1420,4 @@ OpenLane integrated several key open source tools over the execution stages:
     |-- yosys_rewrite_verilog.tcl
     |-- zeroize_origin_def.py
     `-- zeroize_origin_lef.py
-'''
+```
