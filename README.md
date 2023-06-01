@@ -56,7 +56,7 @@ OpenLane integrated several key open source tools over the execution stages:
 ### OpenLANE ASIC Design flow
 ![flow_v1](https://github.com/KanishR1/vsd_openlane_workshop/assets/88330171/87ecc681-ab20-4c14-adae-a72c5cacfc70)
 
-### Lab 1 : Finding the flop ratio and buffer ration for the picorv32a
+### Lab 1 : Finding the flop ratio for the picorv32a
 1. Opening the OpenLANE directory and invoke the OpenLANE tool in the interactive mode.
 ```
 cd Desktop/work/tools/openlane_working_dir/openlane 
