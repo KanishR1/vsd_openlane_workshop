@@ -120,7 +120,7 @@ The run_synthesis command will convert the verilog file that is present in the d
      sky130_fd_sc_hd__buf_1       1656
      sky130_fd_sc_hd__buf_2          8
      sky130_fd_sc_hd__conb_1        42
-     sky130_fd_sc_hd__dfxtp_2     1613
+     ==sky130_fd_sc_hd__dfxtp_2     1613==
      sky130_fd_sc_hd__inv_2       1615
      sky130_fd_sc_hd__mux2_1      1224
      sky130_fd_sc_hd__mux2_2         2
@@ -158,3 +158,11 @@ The run_synthesis command will convert the verilog file that is present in the d
 
    Chip area for module '\picorv32a': 147712.918400
 ```
+
+Flop Utiliztion Ratio = Total number of flops used
+                        --------------------------
+                        Total number of cells
+
+In my case the Flop Ratio = 1613/14876 = 0.108429
+
+Flop Utilization Percentage  = 10.8429 %
