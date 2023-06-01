@@ -34,3 +34,24 @@ The RTL to GDSII flow basically involves :
 7. **Sign-off** - Sign-off analysis refers to the final stage of the electronic design process, where comprehensive verification and analysis are performed to ensure that the design meets all the necessary requirements and specifications. It involves a series of checks and simulations to confirm that the design is ready for fabrication and meets the desired functionality, performance, power, and reliability targets. 
 
 8. **GDSII File Generation** - Once the layout is verified and passes all checks, the final step is to generate the GDSII file format, which represents the complete physical layout of the chip. The GDSII file contains the geometric information necessary for fabrication, including the shapes, layers, masks, and other relevant details.
+
+### Introduction to OpenLANE
+OpenLane is an automated RTL to GDSII flow based on several components including OpenROAD, Yosys, Magic, Netgen, CVC, SPEF-Extractor, KLayout and a number of custom scripts for design exploration and optimization. It also provides a number of custom scripts for design exploration and optimization. The flow performs all ASIC implementation steps from RTL all the way down to GDSII. Currently, it supports both A and B variants of the sky130 PDK, the C variant of the gf180mcu PDK, and instructions to add support for other (including proprietary) PDKs are documented. OpenLane abstracts the underlying open source utilities, and allows users to configure all their behavior with just a single configuration file.
+
+OpenLane integrated several key open source tools over the execution stages:
+1. RTL Synthesis, Technology Mapping, and Formal Verification : yosys + abc
+2. Static Timing Analysis: OpenSTA
+3. Floor Planning: init_fp, ioPlacer, pdn and tapcell
+4. Placement: RePLace (Global), Resizer and OpenPhySyn (formerly), and OpenDP (Detailed)
+5. Clock Tree Synthesis: TritonCTS
+6. Fill Insertion: OpenDP/filler_placement
+7. Routing: FastRoute or CU-GR (formerly) and TritonRoute (Detailed) or DR-CU
+8. SPEF Extraction: OpenRCX or SPEF-Extractor (formerly)
+9. GDSII Streaming out: Magic and KLayout
+10. DRC Checks: Magic and KLayout
+11. LVS check: Netgen
+12. Antenna Checks: Magic
+13. Circuit Validity Checker: CVC
+
+### OpenLANE ASIC Design flow
+![flow_v1](https://github.com/KanishR1/vsd_openlane_workshop/assets/88330171/87ecc681-ab20-4c14-adae-a72c5cacfc70)
