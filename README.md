@@ -195,3 +195,13 @@ The pre-placed cells are typically larger and more complex modules, such as memo
 Power planning in integrated circuit (IC) design involves the careful consideration and distribution of power and ground connections to ensure proper functionality and performance of the chip. One important aspect of power planning is the placement of multiple ground (GND) and supply voltage (VDD) points throughout the IC layout.The need for multiple GND and VDD points arises due to several reasons:By providing multiple GND and VDD points, the power can be distributed more evenly throughout the chip, reducing the chances of voltage drops and improving overall power delivery efficiency. Ground bounce occurs when there are variations in the voltage levels of different GND points due to transient currents. Similarly, power supply noise refers to fluctuations in the VDD levels caused by switching events. By strategically placing multiple GND and VDD points, the impact of ground bounce and power supply noise can be minimized, improving circuit performance and reducing the risk of functional failures.
 
 <img width="517" alt="68" src="https://github.com/KanishR1/vsd_openlane_workshop/assets/88330171/2ba3adcf-8a1d-4ef6-9e14-11a9e5cb0608">
+
+### Running Floorplan in OpenLANE
+To run the floorplan
+```
+run_floorplan
+```
+To view the floorplan in the magic layout 
+```magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/bibs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def```
+
+![Screenshot 2023-06-02 003445](https://github.com/KanishR1/vsd_openlane_workshop/assets/88330171/dadf6bf5-4e33-4aa4-9269-8fbf60e5db95)
