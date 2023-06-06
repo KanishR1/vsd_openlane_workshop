@@ -204,4 +204,9 @@ run_floorplan
 To view the floorplan in the magic layout 
 ```magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/bibs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def```
 
-![Screenshot 2023-06-02 003445](https://github.com/KanishR1/vsd_openlane_workshop/assets/88330171/dadf6bf5-4e33-4aa4-9269-8fbf60e5db95)
+
+![83](https://github.com/KanishR1/vsd_openlane_workshop/assets/88330171/8a9d4b06-a903-4e40-9222-bce082927a1d)
+
+
+
+
